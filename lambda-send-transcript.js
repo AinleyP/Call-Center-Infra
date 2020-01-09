@@ -40,11 +40,11 @@ function sendEmail(transcript) {
         Message: {
             Body: {
                 Text: {
-                    Data: "Hello! Here is the following wish list of a hopeful young child. \n\n\n" + transcript
+                    Data: "Hello! Here is transcription. \n\n\n" + transcript
                 }
             },
             Subject: {
-                Data: "Santa Call Center New Wishlist"
+                Data: "Transcription from Call Center"
             }
         },
         Source: sesConfirmedAddress,
