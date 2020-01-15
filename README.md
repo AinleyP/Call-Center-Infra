@@ -25,3 +25,5 @@ In the above system flow diagram, users call a certain number (XXX-XXX-XXXX) and
 AWS Connect stores the .wav file into an S3 bucket of your choosing. Once the S3 bucket receives a file, PUTOBJECT will trigger a Lambda function to start a new state machine in Step Functions. In the process of handling Lambda functions, a specific Lambda function will create a transcription job using AWS Transcribe. After checking the status of the transcription job, a json file of the transcription is saved in the same S3 bucket in a different file location. The final Lambda function sends the transcription to a specific email using AWS SES.
 
 The included Node.js files are their own individual Lambda functions which are triggered using Step Functions. 
+
+Created: Dec 21, 2019
